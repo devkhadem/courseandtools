@@ -1,0 +1,227 @@
+<!--
+    [Gemini] The hamburger menu should be working. Here's how it's implemented:
+    1.  The hamburger icon is visible on screens smaller than 992px.
+    2.  When you click the hamburger icon, it should toggle the visibility of the navigation links.
+    3.  The icon itself should animate into an "X" shape.
+
+    If you are not seeing this behavior, please try clearing your browser's cache.
+-->
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কোর্স এবং অনলাইন টুল বিক্রি - Modern Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">কোর্স এবং টুল</div>
+            <ul class="nav-links">
+                <li><a href="#hero">হোম</a></li>
+                <li><a href="#courses">কোর্সসমূহ</a></li>
+                <li><a href="#tools">অনলাইন টুল</a></li>
+                <li><a href="#features">বৈশিষ্ট্য</a></li>
+                <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">যোগাযোগ</a></li>
+            </ul>
+            <button id="theme-toggle" class="btn">Toggle Theme</button>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>স্বাগতম আমাদের কোর্স এবং টুল ওয়েবসাইটে</h1>
+            <p>আপনার শিক্ষা এবং উৎপাদনশীলতা বাড়ানোর জন্য সেরা কোর্স এবং টুল খুঁজুন।</p>
+            <a href="#courses" class="btn">আমাদের কোর্স দেখুন</a>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2>আমাদের কোর্সসমূহ</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=200&fit=crop" alt="Web Development" class="card-image">
+                    <h3>ওয়েব ডেভেলপমেন্ট কোর্স</h3>
+                    <p>HTML, CSS, JavaScript শিখুন এবং আধুনিক ওয়েবসাইট তৈরি করুন।</p>
+                    <p class="price">মূল্য: ৫০০০ টাকা</p>
+                    <a href="#" class="btn">এখনই কিনুন</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop" alt="Data Science" class="card-image">
+                    <h3>ডেটা সাইন্স কোর্স</h3>
+                    <p>Python এবং মেশিন লার্নিং এর মাধ্যমে ডেটা বিশ্লেষণ করুন।</p>
+                    <p class="price">মূল্য: ৭০০০ টাকা</p>
+                    <a href="#" class="btn">এখনই কিনুন</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=200&fit=crop" alt="Digital Marketing" class="card-image">
+                    <h3>ডিজিটাল মার্কেটিং কোর্স</h3>
+                    <p>অনলাইন মার্কেটিং এর কৌশল শিখুন এবং ব্যবসা বাড়ান।</p>
+                    <p class="price">মূল্য: ৪০০০ টাকা</p>
+                    <a href="#" class="btn">এখনই কিনুন</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=300&h=200&fit=crop" alt="UI/UX Design" class="card-image">
+                    <h3>UI/UX ডিজাইন কোর্স</h3>
+                    <p>Figma এবং Adobe XD দিয়ে ইউজার-ফ্রেন্ডলি ডিজাইন তৈরি করুন।</p>
+                    <p class="price">মূল্য: ৬০০০ টাকা</p>
+                    <a href="#" class="btn">এখনই কিনুন</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=200&fit=crop" alt="Mobile App Development" class="card-image">
+                    <h3>মোবাইল অ্যাপ ডেভেলপমেন্ট</h3>
+                    <p>React Native দিয়ে অ্যান্ড্রয়েড এবং iOS অ্যাপ তৈরি করুন।</p>
+                    <p class="price">মূল্য: ৮০০০ টাকা</p>
+                    <a href="#" class="btn">এখনই কিনুন</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=300&h=200&fit=crop" alt="Cyber Security Course" class="card-image">
+                    <h3>সাইবার সিকিউরিটি কোর্স</h3>
+                    <p>নেটওয়ার্ক এবং সিস্টেম સુરક્ષા সম্পর্কে জানুন।</p>
+                    <p class="price">মূল্য: ৭৫০০ টাকা</p>
+                    <a href="#" class="btn">এখনই কিনুন</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools">
+        <div class="container">
+            <h2>জনপ্রিয় অনলাইন টুল</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc?w=300&h=200&fit=crop" alt="SEO Tool" class="card-image">
+                    <h3>SEO টুল</h3>
+                    <p>আপনার ওয়েবসাইটের SEO অপটিমাইজ করুন।</p>
+                    <p class="price">মূল্য: ২০০০ টাকা/মাস</p>
+                    <a href="#" class="btn">সাবস্ক্রাইব করুন</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=300&h=200&fit=crop" alt="Graphic Design Tool" class="card-image">
+                    <h3>গ্রাফিক ডিজাইন টুল</h3>
+                    <p>প্রফেশনাল গ্রাফিক তৈরি করুন অনলাইনে।</p>
+                    <p class="price">মূল্য: ৩০০০ টাকা/মাস</p>
+                    <a href="#" class="btn">সাবস্ক্রাইব করুন</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=200&fit=crop" alt="Project Management Tool" class="card-image">
+                    <h3>প্রজেক্ট ম্যানেজমেন্ট টুল</h3>
+                    <p>টিম কাজ সহজ করুন এই টুল দিয়ে।</p>
+                    <p class="price">মূল্য: ৪০০০ টাকা/মাস</p>
+                    <a href="#" class="btn">সাবস্ক্রাইব করুন</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=300&h=200&fit=crop" alt="Video Editing Tool" class="card-image">
+                    <h3>ভিডিও এডিটিং টুল</h3>
+                    <p>সহজেই প্রফেশনাল ভিডিও তৈরি করুন।</p>
+                    <p class="price">মূল্য: ৩৫০০ টাকা/মাস</p>
+                    <a href="#" class="btn">সাবস্ক্রাইব করুন</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop" alt="Social Media Management" class="card-image">
+                    <h3>সোশ্যাল মিডিয়া ম্যানেজমেন্ট</h3>
+                    <p>আপনার সোশ্যাল মিডিয়া অ্যাকাউন্টগুলি পরিচালনা করুন।</p>
+                    <p class="price">মূল্য: ২৫০০ টাকা/মাস</p>
+                    <a href="#" class="btn">সাবস্ক্রাইব করুন</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=300&h=200&fit=crop" alt="Email Marketing Tool" class="card-image">
+                    <h3>ইমেইল মার্কেটিং টুল</h3>
+                    <p>আপনার গ্রাহকদের সাথে ইমেইলের মাধ্যমে যোগাযোগ করুন।</p>
+                    <p class="price">মূল্য: ২২০০ টাকা/মাস</p>
+                    <a href="#" class="btn">সাবস্ক্রাইব করুন</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>আমাদের বৈশিষ্ট্য</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>বিশেষজ্ঞ প্রশিক্ষক</h3>
+                    <p>আমাদের কোর্সগুলি ইন্ডাস্ট্রির সেরা প্রশিক্ষকদের দ্বারা পরিচালিত।</p>
+                </div>
+                <div class="card">
+                    <h3>লাইফটাইম অ্যাক্সেস</h3>
+                    <p>একবার কিনুন, সারাজীবনের জন্য কোর্সের অ্যাক্সেস পান।</p>
+                </div>
+                <div class="card">
+                    <h3>সার্টিফিকেট</h3>
+                    <p>কোর্স শেষে সার্টিফিকেট অর্জন করুন যা আপনার ক্যারিয়ারে সাহায্য করবে।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>আমাদের সম্পর্কে</h2>
+            <p>আমরা একটি অনলাইন প্ল্যাটফর্ম যা শিক্ষার্থীদের জন্য উচ্চ মানের কোর্স এবং পেশাদারদের জন্য প্রয়োজনীয় সরঞ্জাম সরবরাহ করে। আমাদের লক্ষ্য হল সবার জন্য শিক্ষা এবং প্রযুক্তি সহজলভ্য করা।</p>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>সাধারণ জিজ্ঞাস্য</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>কোর্সগুলো কেনা কিনব?</h3>
+                    <p>আমাদের ওয়েবসাইটে আপনার পছন্দের কোর্সে গিয়ে "এখনই কিনুন" বাটনে ক্লিক করুন এবং পেমেন্ট সম্পন্ন করুন।</p>
+                </div>
+                <div class="card">
+                    <h3>পেমেন্টের মাধ্যম কী?</h3>
+                    <p>আমরা ক্রেডিট কার্ড, ডেবিট কার্ড এবং মোবাইল ব্যাংকিং এর মাধ্যমে পেমেন্ট গ্রহণ করি।</p>
+                </div>
+                <div class="card">
+                    <h3>আমি কি টাকা ফেরত পাব?</h3>
+                    <p>হ্যাঁ, আমাদের ৩০ দিনের মানি-ব্যাক গ্যারান্টি রয়েছে।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>গ্রাহকদের মতামত</h2>
+            <div class="grid">
+                <div class="card">
+                    <p>"এই কোর্সগুলো আমার ক্যারিয়ারে অনেক সাহায্য করেছে। অত্যন্ত সুপারিশ করি!"</p>
+                    <p class="author">- রাহুল, ওয়েব ডেভেলপার</p>
+                </div>
+                <div class="card">
+                    <p>"অনলাইন টুলগুলো খুবই কার্যকর। আমার উৎপাদনশীলতা বেড়েছে অনেক।"</p>
+                    <p class="author">- সোনিয়া, ডিজাইনার</p>
+                </div>
+                <div class="card">
+                    <p>"এখান থেকে কেনা কোর্সগুলো মানসম্পন্ন এবং সাশ্রয়ী।"</p>
+                    <p class="author">- অর্জুন, মার্কেটার</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>যোগাযোগ করুন</h2>
+             <p>আমাদের সাথে যোগাযোগ করুন: info@example.com | +880 123 456 789</p>
+            <p class="copyright">&copy; 2023 কোর্স এবং টুল ওয়েবসাইট। সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>
